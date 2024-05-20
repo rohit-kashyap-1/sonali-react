@@ -10,12 +10,14 @@ import Skills from './components/Skills';
 import Qualifications from './components/Qualifications'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import State from './components/State';
+import Boolean from './components/Boolean';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       
-        <div className="App">
+        <div className="App"  >
           <div className='container py-4'>
             <div className='row'>
               <div className='col-md-3'>
@@ -43,6 +45,9 @@ function App() {
                     <div className='list-group-item'>
                       <Link to={'/contact'} className='nav-link'>Contact</Link>
                     </div>
+                    <div className='list-group-item'>
+                      <Link to={'/state'} className='nav-link'>State Concept</Link>
+                    </div>
                   </div>
                   
 
@@ -57,6 +62,7 @@ function App() {
                     <Route path='/qualifications' element={<Qualifications />} />
                     <Route path='/work-experience' element={<Experience />} />
                     <Route path='/contact' element={<Contact />} />
+                    <Route path='/state' element={<Boolean />} />
                   </Routes>
                 </div>
               </div>
