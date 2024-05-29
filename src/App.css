@@ -7,6 +7,15 @@ nav a{
   text-decoration: none;
 }
 
+input:focus{
+  box-shadow:none !important
+}
+.border-success{
+  border:2px solid #4caf50 !important
+}
+.border-danger{
+  border:2px solid #f00 !important
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
